@@ -1,0 +1,25 @@
+<section class="categories-index">
+  <header class="page-header">
+    <div class="intro">
+      <h1>Admin - Categories</h1>
+      <p>Manage all the categories from this dashboard.</p>
+    </div>
+  </header>
+
+  <div class="categories">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.name %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</section>

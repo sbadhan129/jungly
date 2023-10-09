@@ -1,0 +1,20 @@
+<section class="categories-new">
+  <header class="page-header">
+    <div class="intro">
+      <h1>Create a New Category</h1>
+    </div>
+  </header>
+
+  <div class="category-form">
+  <%= form_with model: @category, url: admin_categories_path, local: true do |form| %>
+      <div class="form-group">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+
+      <div class="form-group">
+        <%= form.submit 'Create Category', class: 'btn btn-primary' %>
+      </div>
+    <% end %>
+  </div>
+</section>
